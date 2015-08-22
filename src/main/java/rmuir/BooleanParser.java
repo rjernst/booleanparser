@@ -46,7 +46,7 @@ public final class BooleanParser {
     switch (string) {
       case "true": return true;
       case "false": return false;
-      default: throw new ParseException("Invalid boolean value: '" + string + "'", 0);
+      default: throw new ParseException("Invalid boolean value '" + string + "', must be 'true' or 'false'", 0);
     }
   }
 }
